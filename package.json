@@ -26,12 +26,18 @@
     "@vitejs/plugin-react": "^3.1.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.34.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
     "vite": "^4.1.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "lint-staged": {
+      "**/*.{js,jsx}": ["eslint . --fix", "prettier --write ."]
     }
   }
 }
