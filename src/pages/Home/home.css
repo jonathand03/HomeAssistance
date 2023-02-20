@@ -1,0 +1,31 @@
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.homeContainer .spaceItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.homeContainer .Item {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #6f7b7b;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.sideBar .navItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
